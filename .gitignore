@@ -16,3 +16,4 @@ serving_dir
 !week_6_stream_processing/avro_example/data/rides.csv
 **/yellow_tripdata_2021-01.csv/*
 !01-docker-transform/notes-practice/yellow_tripdata_2021-01.csv
+.venv
