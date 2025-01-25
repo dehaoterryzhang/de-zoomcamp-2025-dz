@@ -15,6 +15,7 @@ services:
 
 docker volume create --name dtc_postgres_volume_local -d local
 
+volume create way
 docker run -it \
 	-e POSTGRES_USER="root" \
 	-e POSTGRES_PASSWORD="root" \
@@ -23,11 +24,21 @@ docker run -it \
 	-p 5432:5432 \
 	postgres:13
 
+mount binding way (Windows)
 docker run -it \
 	-e POSTGRES_USER="root" \
 	-e POSTGRES_PASSWORD="root" \
 	-e POSTGRES_DB="ny_taxi" \
 	-v //c/Users/dehzhang/Desktop/GitHub-Repos/de-zoomcamp/01-docker-terraform/notes-practice/ny_taxi_postgres_data:/var/lib/postgresql/data \
+	-p 5432:5432 \
+	postgres:13
+
+mount binding way (Linux)
+docker run -it \
+	-e POSTGRES_USER="root" \
+	-e POSTGRES_PASSWORD="root" \
+	-e POSTGRES_DB="ny_taxi" \
+	-v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \
 	-p 5432:5432 \
 	postgres:13
 
@@ -37,7 +48,7 @@ pgcli \
 	-d ny_taxi
 
 docker run -it \
-	-e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
   -e PGADMIN_DEFAULT_PASSWORD="root" \
   -p 8080:80 \
   dpage/pgadmin4
@@ -63,7 +74,7 @@ docker run -it \
 	--name pgadmin \
   dpage/pgadmin4
 
-URL="<https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz>"
+URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
 
 python ingest_data.py \
   --user=root \
@@ -89,3 +100,6 @@ docker run -it \
   --db=ny_taxi \
   --table_name=yellow_taxi_trips \
   --url="${URL}"
+
+
+URL = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-10.csv.gz"
