@@ -2,12 +2,13 @@
 
 This repository is based on the Data Engineering ZoomCamp, a free course by DataTalks.Club. Many thanks to the instructors and contributors for creating such an incredible learning experience:
 
-Victoria Perez Mola
-Alexey Grigorev
-Michael Shoemaker
-Zach Wilson
-Will Russell
-Anna Geller
+- Victoria Perez Mola
+- Alexey Grigorev
+- Michael Shoemaker
+- Zach Wilson
+- Will Russell
+- Anna Geller
+
 Check out the official [DataTalks.Club GitHub repository](https://github.com/DataTalksClub/data-engineering-zoomcamp) for more details about the course.
 
 
