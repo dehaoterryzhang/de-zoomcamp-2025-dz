@@ -1,5 +1,15 @@
 # Data Engineering Zoomcamp
 
+This repository is based on the Data Engineering ZoomCamp, a free course by DataTalks.Club. Many thanks to the instructors and contributors for creating such an incredible learning experience:
+
+Victoria Perez Mola
+Alexey Grigorev
+Michael Shoemaker
+Zach Wilson
+Will Russell
+Anna Geller
+Check out the official [DataTalks.Club GitHub repository](https://github.com/DataTalksClub/data-engineering-zoomcamp) for more details about the course.
+
 
 <p align="center">
   <a href="https://airtable.com/shr6oVXeQvSI5HuWD"><img src="https://user-images.githubusercontent.com/875246/185755203-17945fd1-6b64-46f2-8377-1011dcb1a444.png" height="50" /></a>
