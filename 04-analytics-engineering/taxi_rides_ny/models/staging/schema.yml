@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('DBT_DATABASE', 'animated-scope-447904-d6') }}"
+    schema: "{{ env_var('DBT_SCHEMA', 'hw4') }}"
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
+      - name: fhv_tripdata
