@@ -18,3 +18,4 @@ serving_dir
 !01-docker-transform/notes-practice/yellow_tripdata_2021-01.csv
 .venv/
 **.env_encoded
+flink-env/
